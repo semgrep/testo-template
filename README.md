@@ -17,3 +17,8 @@ Commands you should try:
   without running tests. Try `--help` to see what options are available.
 * `dune runtest`: build and run the test suite without arguments. Use
   `-f` to force a re-run.
+
+See also:
+
+* [Documentation](https://testocaml.net/)
+* [Testo project on GitHub](https://github.com/semgrep/testo)
