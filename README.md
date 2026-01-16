@@ -11,12 +11,15 @@ Copy these files into your project:
 
 Commands you should try:
 
-* `./test`: this will run the test executable after building it if
-  necessary. This is the same as `./test run`.
-* `./test status`: this will print the status of the test results
+* `dune build`: build everything including the test executable.
+  `dune build tests/test.exe` will build only the test executable.
+* `./test`: invoke the test executable and run the test suite.
+  This is the same as `./test run`.
+* `./test status`: print the status of the test results
   without running tests. Try `--help` to see what options are available.
 * `dune runtest`: build and run the test suite without arguments. Use
   `-f` to force a re-run.
+* Edit the tests in `tests/test.ml` and see what happens.
 
 See also:
 

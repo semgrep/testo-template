@@ -5,7 +5,11 @@
 
 let test_hello =
   Testo.create "hello"
-    (fun () -> print_endline "hello!")
+    (fun () ->
+       let expected = "hello" in
+       let result = "he" ^ "llo" in
+       Testo.(check string) expected result
+    )
 
 let tests _env = [
   test_hello;
