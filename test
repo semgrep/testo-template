@@ -10,4 +10,5 @@ here=$(dirname "${BASH_SOURCE[0]}")
 
 # Run the compiled test program with the original arguments.
 # The working directory is the one containing this script.
-dune exec tests/test.exe --no-build -- "$@" --chdir "$here"
+dune exec tests/test.exe --no-build --no-print-directory -- \
+  "$@" --chdir "$here"
