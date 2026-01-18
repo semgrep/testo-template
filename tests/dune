@@ -2,6 +2,7 @@
 ; care of rebuilding the executable as needed.
 (rule
  (alias runtest)
+ (package testo-template)  ; remove or rename the package name
  (action
    ; It is against Dune's ideology to chdir into the source project but
    ; we do it anyway. It allows us to write the test results into the
